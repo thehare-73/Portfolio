@@ -1,138 +1,87 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <title>創作</title>
-    <meta name="discription" content="テキストテキストテキストテキストテキストテキストテキストテキストテキスト">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
-    <link rel="stylesheet" href="style.css">
+  <!-- head here -->
+ <head>
+   <title>Profile</title>
+   <meta charset="utf-8">
+   <meta name="description" content="テキストテキストテキストテキストテキストテキストテキストテキスト">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="img/seven_icon.png">
+ </head>
 
+ <body>
+  <!-- header here -->
+  <header id="header" class="wrapper">
+    <div class="site_title">
+      <a href="index.html"><img src="img/logo.svg"></a>
+    </div>
 
-    <link rel="proconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2family=Note+Sarif+JP:wght@400;700&display=swap" rel="stylesheet">
-  </head>
+    <nav>
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#Animal">Animal</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  <body>
-    <!-- header -->
-    <header id="header">
-      <h1 class="site-title">
-        <a href="#"><img src="img/logo.svg" alt="創作"></a>
-      </h1>
-      <!-- header nav -->
-      <nav id="nav">
-        <ul>
-          <li>
-            <a href="#news">お知らせ</a>
-          </li>
+  <!-- mein here -->
+  <main>
+       <div id="mainvisual">
+         <img src="img/water-light.jpg" alt="木零れ日">
+       </div>
 
-          <li>
-            <a href="#products1">商品のご紹介</a>
-          </li>
-
-          <li>
-            <a href="#shop">店舗のご案内</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- onlinestore -->
-      <div class="onlinestore">
-        <a href="#" target="_blank">オンラインストアを見る</a>
-      </div>
-    </header>
-    <!-- header -->
-
-    <!-- main -->
-    <main>
-      <!-- news section -->
-      <section id="news" class="wrapper">
-        <h2 class="section-title">
-          <span class="en">News</span>
-          <span class="ja">お知らせ</span>
-        </h2>
-        <!-- list -->
-        <dl class="list">
-          <dt>2021.01.01</dt>
-          <dd>タイトルタイトルタイトルタイトル</dd>
-          <dt>2021.01.01</dt>
-          <dd>タイトルタイトルタイトルタイトル</dd>
-          <dt>2021.01.01</dt>
-          <dd>タイトルタイトルタイトルタイトル</dd>
-          <dt>2021.01.01</dt>
-          <dd>タイトルタイトルタイトルタイトル</dd>
-          <dt>2021.01.01</dt>
-          <dd>タイトルタイトルタイトルタイトル</dd>
-        </dl>
+      <section id="about" class="wrapper">
+          <!-- about title -->
+           <h2 class="section-title">About</h2>
+          <!-- about img -->
+           <div class="content">
+              <img src="img/seven_icon.png" alt="N_icon">
+              <!--about name&text  -->
+              <div class="text">
+               <h3 class="content-title">NANAMI</h3>
+               <p>座右の銘は「雲外蒼天（うんがいそうてん）」「桜梅桃李（おうばいとうり）」。<br>フロントエンドを学び始めてもうすぐ６カ月。<br>はじめまして、NANAMIです。よろしくお願いします。</p>
+              </div>
+           </div>
+          
       </section>
 
-      <!-- products1 section -->
-      <section id="products1" class="products wrapper">
-        <h2 class="section-title">
-          <span class="ja">日本伝統の甘味</span>
-          <span class="en">japanese traditional sweets</span>
-        </h2>
-        <div class="img">
-          <img src="img/ichigo daifuku1.png" alt="イチゴ大福">
-          <p class="text">
-            テキストテキスト<br>テキストテキスト
-          </p>
-        </div>
-      </section>
-
-      <!-- products2 section -->
-      <section id="products2" class="products wrapper">
-        <h2 class="section-title">
-          <span class="ja">日本伝統のお茶 「抹茶」</span>
-          <span class="en">japanese traditional tea "matcha"</span>
-        </h2>
-        <div class="img">
-          <img src="img/matcha1.png" alt="抹茶">
-          <p class="text">
-            テキストテキスト<br>テキストテキスト
-          </p>
-        </div>
-      </section>
-      
-      <!-- shop map -->
-      <div id="shop">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6483.366329297049!2d139.735061!3d35.660177!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b9c2ef8e6c3%3A0xff8de5eeddcd1e17!2z44CSMTA2LTAwMzIg5p2x5Lqs6YO95riv5Yy65YWt5pys5pyo77yV5LiB55uu!5e0!3m2!1sja!2sjp!4v1739234314784!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </main>
-
-    <footer id="footer">
-      <div class="inner">
-        <div class="left">
-          <a href="#" target="_black">オンラインストアを見る</a>
-          |
-          <a href="mailto:xxxxx@xxx.xxx">お問い合わせ</a>
-        </div>
-
-        <div class="right">
-          <div class="logo">
-            <img src="img/logo.svg" alt="創作">
-          </div>
-          <p class="info">
-            〒１０６-００３２　東京都港区六本木５丁目×××××<br>
-            <a href="tel:03-xxxx-xxxx">電話：０３-ＸＸＸＸ-ＸＸＸＸ</a>
-          </p>
-
-          <ul class="menu">
+      <section id="animal" class="wrapper">
+        <!-- Bicycle title -->
+         <h2 class="section-title">Animal</h2>
+         
+        <!-- Bicycle content -->
+         <ul>
             <li>
-              <a href="#news">お知らせ</a>
+             <img src="img/simaenaga2.png">
+             <h3 class="content-title">シマエナガ</h3>
+             <p>雪の妖精</p>
             </li>
+
             <li>
-              <a href="#products1">商品のご紹介</a>
+              <img src="img/pagu2.png">
+              <h3 class="content-title">パグ</h3>
+              <p>かわいい</p>
             </li>
+
             <li>
-              <a href="#shop">店舗のご案内</a>
+              <img src="img/penguins2.png">
+              <h3 class="content-title">ペンギン</h3>
+              <p>親子の皇帝ペンギン</p>
             </li>
           </ul>
-        </div>
-      </div>
+      </section>
+  </main>
 
-      <p class="copyright">&copy; SOUSAKU</p>
-    </footer>
-  </body>
+  <!-- footer here -->
+  <footer id="footer">
+      <p>&copy;Profile</p>
+  </footer>
+ </body>
 </html>
