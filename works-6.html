@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
   <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+      <link rel="stylesheet" href="css/style-swiper.css">
 </head>
 
 <body>
@@ -18,7 +20,7 @@
     <header class="header ">
       <div class="container">
         <h1 class="header-logo">
-          <a href="index.html">SAMURAI TARO</a>
+          <a href="index.html">N.H</a>
         </h1>
         <nav class="gnav">
           <ul class="gnav-list">
@@ -38,12 +40,46 @@
         <div class="article-container">
           <h2 class="article-title">大学HP（スクール課題）</h2>
           <div class="article-body">
-            <p>
-              <img src="img/works-detail/university0.png" alt="">
-            </p>
+             <!-- Slider main container -->
+              <!-- Slider main container -->
+              <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <img src="img/works-detail/university0.png" alt="スライド画像0">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/works-detail/university01.png" alt="スライド画像01">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/works-detail/university02.png" alt="スライド画像02">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/works-detail/university03.png" alt="スライド画像03">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/works-detail/university04.png" alt="スライド画像04">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="img/works-detail/university05.png" alt="スライド画像05">
+                  </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+
+
             <p>
               「大学HP」をWordPressのオリジナルテーマとして制作したものになります。
-              （スクール課題で、WordPressおよびPHPを使用して制作しました。）
+              （スクール課題で、WordPressおよびPHPを使用して制作しました。またサイトは未公開の為、JavaScriptのライブラリ「swiper」を使用して画像を表示しています。）
             </p>
             <!-- <h3>URL</h3>
             <p><a href="" target="_blank" rel="noopener">ここにURLを入れてください。</a></p> -->
@@ -59,13 +95,13 @@
             </p>
             <h3>コーディングについて</h3>
             <p>
-              　大学サイトのページ構成は、トップページ、固定ページ、投稿ページ、４０４ページ、検索結果ページとなります。ナビゲーションメニュー「ニュース一覧、イベント一覧、コース一覧」からは投稿ページに、「侍大学について」からは固定ページに移動します。<br>
+              　大学サイトのページ構成は、トップページ、固定ページ、投稿ページ、４０４ページ、検索結果ページとなります。ナビゲーションメニューの「ニュース一覧、イベント一覧、コース一覧」からは投稿ページに、「侍大学について」からは固定ページに移動します。<br>
               　ブログサイトのようなコンテンツを投稿できる機能を取り揃えており、またTwitterのフィードをサイト上に表示させることも可能です。<br>
               <br>
               「侍大学について」（固定ページ）には、「Timeline Block For Gutenberg」というプラグインを使用して年表を配置しています。
               また４０４ページでは、閲覧者がトップページに戻れるようにリンクを付けています。<br>
               <br>
-              「header、sideber、footer」は、部品化のコーディングを行い各ページで共有しています。<br>
+              「header、sideber、footer」は、部品化してコーディングをしています。<br>
               投稿ページ（ニュース一覧、イベント一覧）では、「投稿の取得と表示」のループ処理を実行するコーディングを行いました。
               <br>
             </p>
@@ -90,5 +126,7 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script type='text/javascript' src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="js/swiper.js"></script>
 </body>
 </html>
