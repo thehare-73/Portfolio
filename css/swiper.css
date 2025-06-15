@@ -1,0 +1,48 @@
+
+.swiper {
+  width: 600px;
+  height: 1000px;
+  z-index: 9999;
+}
+
+.swiper-container {
+  width: 100%;
+  max-width: 1200px; /*最大幅を1200pxに設定*/
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin: 50px auto;
+}
+
+
+.swiper img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* .swiper-scrollbar {
+  width: fit-content;
+  margin: 0 auto;
+} */
+
+/* 画面幅が縮小した場合、自動的に対応する */
+
+@media screen and(max-width:767px) {
+  .swiper {
+    width: 100%;
+  }
+}
+
+ /*画面が小さい場合、アスペクト比を4/3に調整する*/
+/* @media screen and (max-width: 768px) {
+  .swiper-container {
+    aspect-ratio: 4 / 3; 
+  }
+} */
+
+ /*スマホ用にアスペクト比を1/1に変更する*/
+/* @media screen and (max-width: 480px) {
+  .swiper-container {
+    aspect-ratio: 1 / 1; 
+  }
+} */

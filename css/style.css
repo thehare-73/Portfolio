@@ -160,6 +160,7 @@ img {
 /*--------------------------------
  Works
 ---------------------------------*/
+
 .works-list {
   display: flex;
   flex-wrap: wrap;
@@ -368,6 +369,7 @@ img {
   text-align: center;
 }
 
+
 /*media Queries 767
 ----------------------------------------------------*/
 @media screen and (max-width: 767px) {
@@ -411,6 +413,7 @@ img {
   /* ヘッダー */
   .header .container {
     padding: 15px;
+    z-index: 1;
   }
 
   .header-logo {
@@ -539,4 +542,6 @@ img {
     line-height: 1.7;
     margin-bottom: 20px;
   }
+
+ 
 }
